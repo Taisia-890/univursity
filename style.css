@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #222222;
+}
+
+header {
+    background-image: url(img/header.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+h1 {
+    font-size: 60px;
+    max-width: 750px;
+    padding-top: 100px;
+}
+
+.header-text {
+    font-size: 19px;
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+.navigation-item-link {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.header-top {
+    background-color: #222222;
+    box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.719);
+}
+
+.navigation-item {
+    display: inline-block;
+    margin: 12px;
+}
+
+.navigation {
+    float: right;
+}
+
+.now {
+    background-color: #ffa755;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.good {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.good-card {
+    display: inline-block;
+    width: 21%;
+    margin: 15px;
+}
+
+.course-right {
+    background-image: url(img/subject-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: inline-block;
+    width: 47%;
+}
+
+.course-left {
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+}
+
+.course-right-2 {
+    background-image: url(img/subject-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.course-right-3 {
+    background-image: url(img/subject-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h3 {
+    color: #ffa755;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.liner {
+    background-color: blue;
+    height: 5px;
+    border: none;
+    width: 80%;
+    margin: 5px;
+}
+
+.course-content {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.849);
+    padding: 15px 0px;
+}
+
+.inform-btn {
+    background-color: transparent;
+    text-decoration: none;
+    color: #1a83ff;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 600;
+    padding: 20px;
+    border: 3px dashed #1a83ff;
+}
+
+.inform {
+    text-align: center;
+}
+
+.form-top {
+    background-color: #1a83ff;
+    height: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px dotted orange;
+    width: 100%;
+    padding: 20px;
+    color: #1a83ff;
+    outline: none;
+}
+
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.849);
+    padding: 20px;
+}
+
+button {
+    display: block;
+    width: 170px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #1a83ff;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+}
+
+textarea {
+    background-color: transparent;
+    color: #1a83ff;
+    width: 80%;
+    height: 80px;
+    resize: none;
+    padding: 10px 15px;
+    border: 2px solid orange;
+    display: block;
+    margin: 45px auto;
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #ffffff;
+    text-align: center;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+.input-name {
+    margin: 15px 10px;
+}
+
+fieldset {
+    padding: 20px;
+    border: 2px solid orange;
+}
+
+legend {
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.gender {
+    margin: 0px 10px;
+}
+
+.input-groupe {
+    margin-bottom: 10px;
+}
+
+.course {
+    margin-right: 10px;
+}
+
+select {
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    color: #1a83ff;
+}
+
+@media (max-width: 880px) {
+    .good-card {
+        width: 43%
+    }
+
+    .course-left,
+    .course-right {
+        width: 100%;
+        margin: 8px 0px;
+    }
+
+    h1 {
+        font-size: 36px;
+        max-width: 100%;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 580px) {
+    .good-card {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px
+    }
+
+    .navigation {
+        float: none;
+    }
+    .header-top{
+       text-align: center; 
+    }
+    form{
+        width: 100%;
+    }
+    legend{
+        margin-left:70px
+    }
+}

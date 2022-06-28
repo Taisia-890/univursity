@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div class="form-top">
+            <a href="index.html">
+                <img src="img/back.svg" alt="">
+            </a>
+        </div>
+
+        <fieldset>
+            <legend>
+                Введите Ваши данные
+            </legend>
+            <input type="text" placeholder="имя" class="input" name="name">
+            <input type="text" placeholder="фамилия" class="input" name="second-name">
+        </fieldset>
+        <p class="input-name">
+            Ваш пол
+        </p class>
+        <div class="input-groupe">
+            <input id="female" type="radio" name="floor" value="female">
+            <label for="female" class="gender">
+                Женский
+            </label>
+            <input id="male" type="radio" name="floor" class="inputradio" value="male">
+            <label for="male" class="gender">
+                Мужской
+            </label>
+        </div>
+        <div class="input-groupe">
+            <input type="checkbox" name="well" id="eighteen" value="eighteen">
+            <label for="eighteen">
+                Мне есть 18
+            </label>
+        </div>
+        <label class="course" for="course">
+            Выберите курс
+        </label>
+        <select id="course" name="course">
+            <option value="front-end">
+                Front-end
+            </option>
+            <option value="web-design">
+                Web design
+            </option>
+            <option value="graphic-design">
+                Графический дизайн
+            </option>
+        </select>
+        <textarea placeholder="Дополнительная информация" name="story"></textarea>
+        <button type="submit">
+            Отправить заявку
+        </button>
+    </form>
+
+</body>
+
+</html>
